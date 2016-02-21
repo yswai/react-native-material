@@ -9,8 +9,20 @@ import React, {
 } from 'react-native';
 
 import {
-  Toolbar,
-  Button
+    Avatar,
+    Button,
+    Card,
+    Checkbox,
+    CheckboxGroup,
+    Drawer,
+    Divider,
+    Icon,
+    IconToggle,
+    RadioButton,
+    Ripple,
+    RadioButtonGroup,
+    Subheader,
+    Toolbar
 } from 'react-native-material-design';
 
 class ReactNotes extends Component {
@@ -19,14 +31,10 @@ class ReactNotes extends Component {
       <View style={styles.container}>
         <Toolbar title='My Toolbar' theme='dark'/>
         <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
           YSW rocks
         </Text>
+        <Avatar text="YSW" />
+        <Divider theme='dark' inset={false} />
         <Button value="NORMAL FLAT" onPress={()=> console.log("I pressed a flat button")} />
         <Button value="NORMAL RAISED" raised={true} onPress={()=> console.log("I pressed a raised button")} />
       </View>
@@ -45,11 +53,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
   }
 });
 
